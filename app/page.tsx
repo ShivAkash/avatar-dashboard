@@ -8,13 +8,11 @@ import {
   CardContent,
   CardFooter,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import ThreeDAvatar from "@/components/ThreeDAvatar";
 import AvatarFallback from "@/components/AvatarFallback";
 import CreateAvatarForm from "@/components/CreateAvatarForm";
 import dynamic from 'next/dynamic';
@@ -185,6 +183,7 @@ export default function Dashboard() {
                 <motion.div 
                   key={user.id} 
                   variants={itemVariants}
+                  className={activeModel === user.id ? "ring-2 ring-blue-500" : ""}
                   onMouseEnter={() => setActiveModel(user.id)}
                   onMouseLeave={() => setActiveModel(null)}
                 >

@@ -28,8 +28,7 @@ export function ThemeProvider({
   storageKey = "ui-theme",
   attribute = "data-theme",
   enableSystem = false,
-  disableTransitionOnChange = false,
-  ...props
+  disableTransitionOnChange = false
 }: ThemeProviderProps) {
   const [theme, setTheme] = useState<Theme>(defaultTheme)
 

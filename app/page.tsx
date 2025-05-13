@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
@@ -232,7 +232,7 @@ export default function Dashboard() {
                   No avatars found
                 </h3>
                 <p className="text-slate-500 dark:text-slate-400 mb-6">
-                  You don't have any avatars yet. Create your first AI avatar to get started.
+                  You do not have any avatars yet. Create your first AI avatar to get started.
                 </p>
                 <Button onClick={() => setIsModalOpen(true)}>
                   Create Your First Avatar
